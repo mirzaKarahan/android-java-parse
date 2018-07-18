@@ -3,6 +3,8 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="loginSuccesful">Login Successful. Welcome </string>
+    <string name="usernameAlreadyExists">Username Already Exists</string>
     <string name="loginError">Login Error</string>
+    <string name="userRegisterSuccessful">User Register Successful</string>
     <string name="usernameOrPasswordWrong">Username or Password is Wrong</string>
 </resources>

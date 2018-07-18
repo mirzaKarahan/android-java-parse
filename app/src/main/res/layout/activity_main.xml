@@ -22,6 +22,7 @@
         android:hint="@string/password"
         android:layout_below="@id/edtUsername"
         android:id="@+id/edtPassword"
+        android:inputType="textPassword"
         android:textAlignment="center"/>
     <LinearLayout
         android:layout_below="@id/edtPassword"

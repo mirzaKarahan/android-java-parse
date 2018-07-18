@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void done(List<ParseObject> objects, ParseException e) {
                         if (e != null){
-                            Toast.makeText(getApplicationContext(),"Login Error",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),getApplicationContext().getString(R.string.loginError),Toast.LENGTH_SHORT).show();
                         }else{
                             if (objects.size()>0){
-                                Toast.makeText(getApplicationContext(),"Login Successful. Welcome "+objects.get(0).getString("username"),Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),getApplicationContext().getString(R.string.loginSuccesful)+objects.get(0).getString("username"),Toast.LENGTH_SHORT).show();
                             }else {
-                                Toast.makeText(getApplicationContext(),"username or password is wrong",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),getApplicationContext().getString(R.string.usernameOrPasswordWrong),Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
